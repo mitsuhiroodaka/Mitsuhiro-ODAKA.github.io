@@ -16,6 +16,7 @@ width="210" height="88" alt="welcome">
 </div>
 
   <div class = "blocka">
+  <font color="white">
   略歴<br>
   2004年　神戸市立桂木小学校<br>
   2007年　六甲中学校<br>
@@ -35,23 +36,24 @@ width="210" height="88" alt="welcome">
     問題解決の数理（米テキサス大学オースティン校）<br>
     クリティカルシンキング（豪クイーンズランド大学）<br>
     複雑系概論（米サンタフェ研究所）<br>
+    </font>
     <br>
     <br>
   </div>
-  <style type="text/css">
-  div.clearblock {
-   clear: both;
-   }
-  </style>
   
-  <style type="text/css">
-  div.blocka {
-   float: left;
-   width: 30%;
-  }
-  </style>
+  <div class="blockc">
+   <br>
+  </div>
+  
+  
+  .blockc::after {
+   content: "";
+   clear: both;
+   display: block;
+   }
   
   <div class = "blockb">
+  <font color = "white">
   資格詳細<br>
   CGエンジニア（エキスパート）、画像処理エンジニア（ベーシック）<br>
   発行機関　公益財団法人画像情報教育振興協会 <br> 
@@ -96,7 +98,19 @@ width="210" height="88" alt="welcome">
   Microsoft Office Specialist (MOS) Excel, Access, PowerPoint<br>
   発行機関 Microsoft<br> 
   発行日: 2012年7月有効期限なし<br>
+  </font>
   </div>
+
+<style type="text/css">
+div.blocka {
+   float: left;  /* 左端に配置 */
+   width: 150px;
+}
+div.blockc {
+   float: right;  /* 右端に配置 */
+   width: 150px;
+}
+</style>
   
 </div>
 </body>
