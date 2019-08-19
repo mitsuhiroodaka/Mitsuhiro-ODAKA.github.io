@@ -1,0 +1,4 @@
+AuthType     Basic
+AuthName     "ODAKA_AUTHENTIFICATION_GATE"
+AuthUserFile /Mitsuhiro-ODAKA/Mitsuhiro-ODAKA.github.io/.htpasswd
+require valid-user
