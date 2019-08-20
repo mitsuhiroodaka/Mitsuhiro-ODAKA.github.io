@@ -4,14 +4,15 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sandbox: home - Animsition</title>
+  <title>Sandbox: options - Animsition</title>
   <link href="sandbox.css" rel="stylesheet">
   <link href="../dist/css/animsition.min.css" rel="stylesheet">
 </head>
 <body>
+
   <div class="animsition">
 
-    <div class="item bg-indigo">
+    <div class="item bg-yellow">
       <h1>Animsition: Sandbox</h1>
     </div>
 
@@ -36,7 +37,18 @@
   <script src="../dist/js/animsition.min.js" charset="utf-8"></script>
   <script>
   $(document).ready(function() {
-    $('.animsition').animsition();
+    $('.animsition').animsition({
+      inClass:'zoom-in-sm',
+      outClass:'zoom-out-sm'
+    })
+    .one('animsition.inStart',function(){
+      $(this).append('<h2 class="target">Callback: Start</h2>');
+      console.log('event -> inStart');
+    })
+    .one('animsition.inEnd',function(){
+      $('.target', this).html('Callback: End');
+      console.log('event -> inEnd');
+    });
   });
   </script>
 
