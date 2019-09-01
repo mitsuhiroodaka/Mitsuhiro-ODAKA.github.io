@@ -3,18 +3,50 @@
 <meta charset="utf-8">
 <title>小髙充弘のホームページ</title>
 </head>
-<body background="image20.gif"; leftmargin="20" rightmargin="20">
-<video autoplay muted loop id="myVideo">
-  <source src="IMG_0694.MP4" type="video/mp4">
-</video>
+  
+<body leftmargin="20" rightmargin="20">
+
+<div class="video-background">
+ <div id="video-foreground" class="mute"></div>
+ </div>
+ <div class="container">
+ <div class="col-md-12 main-content">
+ <div class="text-center">
+ <h1>Youtube Live Background!</h1>
+ <p>This is a fully responsive, auto-play, auto-loop YouTube Video Background. You can use any video, just edit the JavaScript file. Try the sound icon below to enable/disable sound. The video running is from channel Space Videos and you can check the original <a href="https://www.youtube.com/watch?v=ddFvjfvPnqk">here</a>.</p>
+ <span class="fa-stack fa-lg sound">
+ <i class="fa fa-circle-o fa-stack-2x"></i>
+ <i class="fa fa-volume-off fa-stack-1x volume-icon"></i>
+ </span>
+ <a href="https://www.facebook.com/viewlike.us" target="_blank">
+ <span class="fa-stack fa-lg">
+ <i class="fa fa-circle-o fa-stack-2x"></i>
+ <i class="fa fa-facebook fa-stack-1x"></i>
+ </span>
+ </a>
+ <a href="https://www.viewlike.us" target="_blank">
+ <span class="fa-stack fa-lg">
+ <i class="fa fa-circle-o fa-stack-2x"></i>
+ <i class="fa fa-link fa-stack-1x"></i>
+ </span>
+ </a>
+ </div>
+ </div>
+ </div>
+  
+  
+<!-- <video autoplay muted loop id="myVideo">
+<source src="IMG_0694.MP4" type="video/mp4">
+</video> -->
 
 <!-- Optional: some overlay text to describe the video -->
-<div class="content">
-  <h1>Heading</h1>
-  <p>Lorem ipsum...</p>
-  <!-- Use a button to pause/play the video with JavaScript -->
-  <button id="myBtn" onclick="myFunction()">Pause</button>
+<!-- <div class="content">
+<!--   <h1>Heading</h1>
+  <p>Lorem ipsum...</p> -->
+<!-- Use a button to pause/play the video with JavaScript -->
+<button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
+  
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: fixed;
@@ -49,7 +81,7 @@
   background: #ddd;
   color: black;
 }
-  
+
 <script>
 // Get the video
 var video = document.getElementById("myVideo");
@@ -67,11 +99,12 @@ function myFunction() {
     btn.innerHTML = "Play";
   }
 }
-</script>
-  
+</script> -->
   
 
-  <font color = "white"; size = "5">
+
+
+<font color = "white"; size = "5">
 <img src="Mitsuhiro-ODAKA.github.io/welcome.gif"
      width="210" height="88" alt="welcome">
 <br>
