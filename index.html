@@ -7,7 +7,8 @@
 
 <body>
   
-<html>
+  
+
 <video autoplay muted loop id="myVideo">
 <source src="IMG_0694.MP4" type="video/mp4">
 </video>
@@ -22,17 +23,17 @@
 </div>
 </html>
   
-<css>
-myVideo {
+<!-- <css> -->
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  background-size: cover;
-  z-index: -100; 
 }
 
+/* Add some content at the bottom of the video/page */
 .content {
   position: fixed;
   bottom: 0;
@@ -42,7 +43,8 @@ myVideo {
   padding: 20px;
 }
 
-myBtn {
+/* Style the button used to pause/play the video */
+#myBtn {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -52,11 +54,11 @@ myBtn {
   cursor: pointer;
 }
 
-myBtn:hover {
+#myBtn:hover {
   background: #ddd;
   color: black;
 }
-</css>
+<!-- </css> -->
   
 <script>
 // Get the video
@@ -77,7 +79,7 @@ function myFunction() {
 }
 </script>
   
-
+<!-- 
 <html>
 <div align ="center">
 <font color = "white"; size = "5">
@@ -121,7 +123,7 @@ Mitsuhiro ODAKA</b></font><br>
 <font color="whitesmoke">背景画像<br>
 「カラフル・ネットワーク」© 2019 Mitsuhiro ODAKA</font>
 </div>
-</html>
+</html> -->
 
 </body>
 
