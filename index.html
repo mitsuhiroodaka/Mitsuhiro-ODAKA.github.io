@@ -3,54 +3,11 @@
 <meta charset="utf-8">
 <title>小髙充弘のホームページ</title>
 </head>
-  
-<body>
-<div align ="center">
-<font color = "white"; size = "5">
-<img src="Mitsuhiro-ODAKA.github.io/welcome.gif"
-     width="210" height="88" alt="welcome">
-<br>
-<img src="Mitsuhiro-ODAKA.github.io/image13.gif"
-     width="315" height="132" alt="welcome2"><br>
-ヒアリのいかだ © Tim Nowack / Georgia Tech
-<hr width="500">
-  
-<div style="padding:5px 10px;font-weight:bold;background: radial-gradient(#a0522d, #191970); width:400px; color: #fff; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;"> 
-<a href="index.html">メイン画面に戻る</a><br>
-<a href="about.html">プロフィール</a><br>
-<a href="top.html">研究業績</a><br>
-<a href="link.html">リンク</a><br>
-</div>
-  
-<hr width="500"><br><br>
-
-<div style="padding:5px 10px;background: radial-gradient(#a0522d, #191970); color: #fff; width:500px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;"> 
-総合研究大学院大学（総研大）<br>
-複合科学研究科<br>
-情報学専攻<br>
-<br>
-国立情報学研究所（NII）<br>
-情報社会相関研究系RA<br>
-<br>
-<font size="6"><b>小髙充弘<br>
-Mitsuhiro ODAKA</b></font><br>
-(Bachelor of Medicine)<br>
-</div>
-
-<br><br>
-<hr width="500">
-</font>
-</div>
-
-<div align ="left">
-<br><br><br>
-<font color="whitesmoke">背景画像<br>
-「カラフル・ネットワーク」© 2019 Mitsuhiro ODAKA</font>
-</div>
-  
-</body>
 </html>
 
+<body>
+  
+<html>
 <video autoplay muted loop id="myVideo">
 <source src="IMG_0694.MP4" type="video/mp4">
 </video>
@@ -63,18 +20,19 @@ Mitsuhiro ODAKA</b></font><br>
 <!-- Use a button to pause/play the video with JavaScript -->
 <button id="myBtn" onclick="myFunction()">Pause</button>
 </div>
-
+</html>
+  
 <css>
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
+myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
+  background-size: cover;
+  z-index: -100; 
 }
 
-/* Add some content at the bottom of the video/page */
 .content {
   position: fixed;
   bottom: 0;
@@ -84,8 +42,7 @@ Mitsuhiro ODAKA</b></font><br>
   padding: 20px;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
+myBtn {
   width: 200px;
   font-size: 18px;
   padding: 10px;
@@ -95,7 +52,7 @@ Mitsuhiro ODAKA</b></font><br>
   cursor: pointer;
 }
 
-#myBtn:hover {
+myBtn:hover {
   background: #ddd;
   color: black;
 }
@@ -121,5 +78,50 @@ function myFunction() {
 </script>
   
 
+<html>
+<div align ="center">
+<font color = "white"; size = "5">
+<img src="Mitsuhiro-ODAKA.github.io/welcome.gif"
+     width="210" height="88" alt="welcome">
+<br>
+<img src="Mitsuhiro-ODAKA.github.io/image13.gif"
+     width="315" height="132" alt="welcome2"><br>
+ヒアリのいかだ © Tim Nowack / Georgia Tech
+<hr width="500">
+  
+<div style="padding:5px 10px;font-weight:bold;background: radial-gradient(#fff0f5, #ffe4e1); width:400px; color: #fff; border-radius: 20px; -webkit-border-radius: 20px; -moz-border-radius: 20px;"> 
+<a href="index.html">メイン画面に戻る</a><br>
+<a href="about.html">プロフィール</a><br>
+<a href="top.html">研究業績</a><br>
+<a href="link.html">リンク</a><br>
+</div>
+  
+<hr width="500"><br><br>
 
+<div style="padding:5px 10px;background: radial-gradient(#a0522d, #191970); color: #fff; width:500px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;"> 
+総合研究大学院大学<br>
+複合科学研究科<br>
+情報学専攻<br>
+<br>
+国立情報学研究所<br>
+情報社会相関研究系RA<br>
+<br>
+<font size="6"><b>小髙充弘<br>
+Mitsuhiro ODAKA</b></font><br>
+(Bachelor of Medicine)<br>
+</div>
+
+<br><br>
+<hr width="500">
+</font>
+</div>
+
+<div align ="left">
+<br><br><br>
+<font color="whitesmoke">背景画像<br>
+「カラフル・ネットワーク」© 2019 Mitsuhiro ODAKA</font>
+</div>
+</html>
+
+</body>
 
